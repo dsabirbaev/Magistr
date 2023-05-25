@@ -1,0 +1,27 @@
+#instruction{
+    width: 100%;
+    min-height: 920px;
+}
+
+.instruction-wrapper{
+    padding-bottom: 120px;
+}
+
+.instruction{
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 56px;
+        &--title{
+            @include font-style(56px, $ff-InterMedium, $color-text-header);
+            line-height: 72px;
+            width: 637px;
+        }
+        &--text{
+            @include font-style(18px, $ff-InterRegular, $color-text-header);
+            line-height: 28px;
+            width: 569px;
+        }
+    }
+}

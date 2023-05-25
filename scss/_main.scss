@@ -1,0 +1,31 @@
+@import 'variables',
+'mixins',
+'fonts';
+
+
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 20px;
+    //border: 1px solid red;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+@import './header/header';
+@import './intro/intro';
+@import './modal/modal';
+@import './preferences/preferences';
+@import './instruction/instruction';
+@import './application/application';
+@import './statistics/statistics';
+@import './news/news';
+@import './arguments/arguments';
+@import './footer/footer';
+
+
+@import './news-page/news-page';

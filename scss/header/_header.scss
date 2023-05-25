@@ -1,0 +1,32 @@
+#header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff2e;
+    backdrop-filter: blur(10px);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    &__list{
+        display: flex;
+        column-gap: 40px;
+        &--item{
+            &-link{
+                @include font-style(16px, $ff-InterMedium, $color-text-header);
+            }
+            .btn{
+                padding: 16px 55px;
+                background-color: $color-btn-header;
+                color: $color-white;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+

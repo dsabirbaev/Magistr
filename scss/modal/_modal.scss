@@ -1,0 +1,126 @@
+
+
+
+
+.modal-window {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #00000050;
+    backdrop-filter: blur(3px);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    overflow: hidden;
+    &__content {
+        width: 456px;
+        height: 649px;
+        background: #FFFFFF;
+        border: 1px solid #EEEFF1;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        padding: 32px;
+        
+        &-header{
+            @include font-style(30px, $ff-InterSemiBold, $color-text-header);
+            line-height: 40px;
+            display: flex;
+        }
+        &-categories{
+            @include font-style(16px, $ff-RobotoMedium, $color-text-header);
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+        &-btn{
+            background-color: transparent;
+            width: 196px;
+            height: 48px;
+            border-bottom: 2px solid silver;
+        }
+
+    }
+}
+
+.bx-x{
+    cursor: pointer;
+}
+
+
+.modal-window__content-item{
+    display: none;
+    margin-top: 32px;
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    label{
+        @include font-style(14px, $ff-RobotoRegular, $color-text-header); 
+        p{
+            margin-bottom: 8px;
+        }
+        input{
+            width: 100%;
+        }
+        .input-wrapper{
+            display: flex;
+            width: 100%;
+            border: 1px solid silver;
+            border-radius: 8px;
+            padding: 14px 12px;
+        }
+    }
+    button{
+        padding: 12px 0;
+        border-radius: 6px;
+        background-color: $color-blue;
+        @include font-style(16px, $ff-RobotoMedium, $color-white); 
+    }
+    .btn-color{
+        background-color: $color-btn-bg;
+    }
+    .form-or{
+        text-align: center;
+        @include font-style(14px, $ff-InterMedium, $color-text-header); 
+        position: relative;
+        &::before{
+            content: "";
+            width: 80px;
+            height: 1px;
+            background-color: silver;
+            position: absolute;
+            left: 22%;
+            top: 50%;
+        }
+        &::after{
+            content: "";
+            width: 80px;
+            height: 1px;
+            background-color: silver;
+            position: absolute;
+            right: 22%;
+            top: 50%;
+        }
+    }
+}
+
+
+.pass-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+
+
+
+
+.active {
+    display: block;
+    color: $color-blue;
+    border-bottom-color: $color-blue;
+}

@@ -1,0 +1,60 @@
+#application{
+    width: 100%;
+    min-height: 632px;
+    background-color: $color-application-bg;
+}
+
+.application-wrapper{
+    padding-top: 72px;
+   
+}
+.application{
+    &__title{
+        @include font-style(56px, $ff-InterMedium, $color-text-header);
+        line-height: 72px;
+        max-width: 856px;
+    }
+    &__card{
+        display: flex;
+        gap: 130px;
+        padding-left: 20px;
+        position: relative;
+        overflow: hidden;
+        &--item{
+            &::before{
+                content: "";
+                height: 1px;
+                width: 100%;
+                background-color: silver;
+                position: absolute;
+                top: 8%;
+                right: 32%;
+                z-index: 1;
+            }
+            &-number{
+                @include font-style(40px, $ff-InterMedium, $color-white);
+                line-height: 48.41px;
+                background-color: $color-black;
+                width: 48px;
+                height: 48px;
+                border-radius: 50px;
+                text-align: center;
+                position: relative;
+                z-index: 22;
+            }
+            &-title{
+                @include font-style(24px, $ff-InterSemiBold, $color-text-header);
+                line-height: 32px;
+                max-width: 303px;
+                margin-top: 32px;
+                margin-bottom: 42px;
+            }
+            &-text{
+                @include font-style(16px, $ff-InterRegular, $color-text-header);
+                line-height: 24px;
+                max-width: 303px;
+            }
+        }
+    } 
+    
+}

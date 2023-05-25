@@ -1,0 +1,42 @@
+
+
+#arguments{
+    min-height: 868px;
+    width: 100%;
+}
+
+.arguments-wrapper{
+    
+    padding: 120px 0 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.arguments{
+    &__card{
+        &--img{
+            width: 100%;
+        }
+        &--title{
+            @include font-style(24px, $ff-RobotoMedium, $color-text-header);
+            text-align: center;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+        &--text{
+            @include font-style(16px, $ff-InterRegular, $color-text-header);
+            max-width: 303px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &--btn{
+            @include font-style(16px, $ff-InterRegular, $color-blue);
+            background-color: transparent;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
